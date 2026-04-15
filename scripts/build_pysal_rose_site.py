@@ -856,7 +856,7 @@ def render_html(rows: List[ModuleMetrics]) -> str:
 
 def write_html(rows: List[ModuleMetrics], output_dir: Path) -> Path:
     output_dir.mkdir(parents=True, exist_ok=True)
-    path = output_dir / "interactive_pysal_rose_plot_updated.html"
+    path = output_dir / "interactive_pysal_rose_plot.html"
     path.write_text(render_html(rows), encoding="utf-8")
     return path
 
